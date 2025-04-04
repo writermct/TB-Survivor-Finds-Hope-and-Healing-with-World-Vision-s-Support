@@ -1,0 +1,194 @@
+/* Reset styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.8;
+    color: #4a4a4a; /* Dark brownish-gray for readability */
+    background-color: #f6f2e3; /* Cream tone */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    text-align: left;
+    color: #8e735b; /* Muted mustard tone */
+    margin-bottom: 10px; /* Reduced bottom margin for tighter spacing */
+    font-size: 2rem;
+    max-width: 90%; /* Ensures the title wraps */
+    line-height: 1.2; /* Adjust line height for wrapping */
+    white-space: normal; /* Allow line breaks */
+}
+
+.intro-text p:first-of-type {
+    margin-top: 30px; /* Add space above the first paragraph */
+    margin-bottom: 20px;
+
+}
+
+.intro-text p {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1rem;
+    color: #4b3b2f;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Standard space between paragraphs */
+    text-indent: 2em;
+
+}
+
+
+/* General image styling */
+.story-img {
+    display: block;
+    margin: 5px auto; /* Reduced space below the image */
+    border-radius: 0; /* No rounded corners */
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styling for the first image */
+.first-img {
+    max-width: 45%; /* Make it smaller */
+    margin-right: 20px; /* Adjust spacing between image and text */
+}
+
+/* Image 1 (top) and Image 4 (bottom) */
+.image-top, .image-bottom {
+    text-align: center;
+}
+
+/* Image 2 and Image 3 wrapped with text */
+.wrapped-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 20px 10px 0;
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+
+/* Image 3 on the right */
+.right-img {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/* Clear floats after paragraphs */
+p::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Half size image */
+.half-size {
+    width: 45%;
+    max-width: 45%;
+    height: auto;
+}
+
+/* Image and Text Wrap for Image 1 */
+.image-text-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+.image-text-wrap img {
+    max-width: 50%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.intro-text {
+    margin-top: 0px;
+    margin-bottom: 0;
+    flex: 1;
+}
+
+/* Text Style */
+.intro-text h1 {
+    color: #6e7756; /* sage tone */
+    margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.centered-image {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.centered-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-text-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+.side-text {
+    flex: 1;
+    font-family: 'Times New Roman', serif;
+    color: #4b3b2f; /* Brown tone */
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Ensure all paragraphs have consistent styling */
+p {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1rem;
+    color: #4b3b2f; /* Ensure text color is consistent */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Add space between paragraphs */
+    text-indent: 2em;
+}
+
+/* Adjust space between paragraphs inside .intro-text */
+.intro-text p:first-of-type {
+    margin-bottom: 0px; /* Reduce space between first and second paragraph */
+    margin-top: 10px; /* Add space above the first paragraph */
+}
+
+.intro-text p:last-of-type {
+    margin-top: 0; /* Ensure no margin on last paragraph */
+}
+
+.intro-text p:nth-of-type(2) {
+    margin-bottom: 0; /* Reduce space after the second paragraph */
+    margin-top: 0;
+}
+
+.intro-text p:nth-of-type(3) {
+    margin-top: 0; /* Reduce space above the third paragraph */
+}
+
+/* Adjust space between paragraphs inside .side-text */
+.side-text p {
+    margin-bottom: 20px; /* Keep the spacing as 20px */
+}
+
+/* Additional specific styles to avoid overrides in the later paragraphs */
+.image-text-wrap .side-text p {
+    font-size: 1.1rem;
+    color: #4b3b2f; /* Same color */
+    line-height: 1.6;
+}
